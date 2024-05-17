@@ -1,9 +1,9 @@
 ---
-title: 'Three letters: Fop' 
+title: A Zypper wrapper with Flatpak support
 description: An opinionated wrapper around Zypper
 template: splash
 hero:
-  tagline: An opinionated wrapper around Zypper.
+  tagline: Create package installations as code to be shared and redeployed
   image:
     file: ../../assets/clipart_gecko.webp
   actions:
@@ -21,14 +21,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## What is Fop?
 
 <CardGrid stagger>
-	<Card title="Unified Package Management" icon="pencil">
-		Provides a unified interface across Linux distributions.
+	<Card title="Simplified Package Management" icon="pencil">
+		Zypper is a package manager, while fop is a tool that helps manage packages.
 	</Card>
-	<Card title="Attach notes" icon="add-document">
-		Zypper doesn't have a friendly UX for attaching memos to package operations. This is where 'fop' comes in, eg. `fop install openssl --notes "for managing certs"`
+	<Card title="Reproducible Installations" icon="setting">
+		Declarative package configurations, allowing system upgrades which can be redeployed and rolled back.
 	</Card>
 	<Card title="Zypper under the hood" icon="setting">
-		Fop is just a wrapper around zypper, providing the same functionality with added features.
+		Fop is just a wrapper around zypper, with added features.
+	</Card>
+	<Card title="Attach notes" icon="add-document">
+		A friendly UX for attaching memos to package operations. eg. `fop install openssl --notes "for managing certs"`
 	</Card>
 	<Card title="Read the docs" icon="open-book">
 		Learn more in [the Fop Docs](/guides/example).
